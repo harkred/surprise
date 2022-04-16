@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Updock', cursive;
+    font-size: 2em;
+    background-color: #FB6B90;
+    color: #EFEBE0;
+    animation-name: color-changer;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#main {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.char {
+    animation-name: load;
+    animation-duration: 3s;
+}
+
+#heart {
+    color: #c20313;
+    animation-name: heart-beat;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-changer {
+    0% {
+        background-color: #FB6B90;
+    }
+
+    50% {
+        background-color: #FB4570;
+    }
+
+    100% {
+        background-color: #FB6B90;
+    }
+}
+
+@keyframes load {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes heart-beat {
+    0% {
+        color: #c20313;
+        transform: scale(1);
+    }
+
+    50% {
+        color: #FB8DA0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        color: #c20313;
+        transform: scale(1);
+    }
+}
